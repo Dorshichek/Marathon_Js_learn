@@ -1,5 +1,4 @@
 function calc(a, operation, b) {
-
   if (typeof a !== 'number' || a !== a || typeof operation !== 'string' || typeof b !== 'number' || b !== b) {
     return 'Error'
   }
