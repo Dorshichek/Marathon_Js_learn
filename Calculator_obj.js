@@ -1,9 +1,6 @@
 function calc(a, operation, b) {
-  if (typeof a !== 'number' || a !== a || typeof operation !== 'string' || typeof b !== 'number' || b !== b) {
-    return 'Error'
-  }
-
-  let operators = {
+  let isValid = typeof a !== 'number' || a !== a || typeof operation !== 'string' || typeof b !== 'number' || b !== b
+  const operators = {
     sum: a + b,
     minus: a - b,
     multi: a * b,
@@ -12,10 +9,12 @@ function calc(a, operation, b) {
     remainder: a % b,
   }
 
-  if(operators[operation]) {
+  if (isValid) {
+    return 'Error'
+  } else if (operators[operation]) {
     return operators[operation]
   } else {
-    return 'Unknown operation'
+    return 'Unknown operations'
   }
 }
 
