@@ -18,24 +18,24 @@ function deleteTask(task) {
   delete list[task]
 }
 
-function showList() {
-  function checkTaskStatusInList(status) {
+function checkTaskStatusInList(status) {
 
-    let haveStatus = false
-    console.log(status + ' :')
+  let haveStatus = false
+  console.log(status + ' :')
 
-    for (let task in list) {
-      if (list[task] === status) {
-        haveStatus = true
-        console.log('   ' + task)
-      }
-    }
-
-    if (haveStatus === false) {
-      console.log(' - ')
+  for (let task in list) {
+    if (list[task] === status) {
+      haveStatus = true
+      console.log('   ' + task)
     }
   }
 
+  if (haveStatus === false) {
+    console.log(' - ')
+  }
+}
+
+function showList() {
   checkTaskStatusInList('To Do')
   checkTaskStatusInList('In Progress')
   checkTaskStatusInList('Done')
