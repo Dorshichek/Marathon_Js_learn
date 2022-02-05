@@ -91,6 +91,7 @@ function showBy(key) {
 addTask('Do Homework')
 addTask('Buy products')
 addTask('Learn JS')
+addTask('Learn english')
 
 changeStatus('Buy products', 'Done')
 changeStatus('Learn JS', 'In progress')
