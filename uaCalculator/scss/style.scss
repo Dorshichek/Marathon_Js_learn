@@ -1,0 +1,95 @@
+@import "fonts",
+"variables";
+
+*, {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.calculator {
+  font-family: 'Work sans', sans-serif;
+  width: 364px;
+  height: 582px;
+  margin: 0 auto;
+  padding: 21px 20px 25px;
+  background-color: $black;
+}
+
+button {
+  width: 69px;
+  height: 72px;
+  cursor: pointer;
+  border: none;
+  background-color: $grey;
+  color: $white;
+  border-radius: 24px;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 400;
+  padding: 12px;
+  align-items: center;
+}
+
+.result {
+  font-family: 'Work sans', sans-serif;
+  border: none;
+  width: 100%;
+  height: 96px;
+  text-align: right;
+  font-size: 96px;
+  line-height: 1;
+  font-weight: 300;
+  margin-bottom: 16px;
+  color: $white;
+  background-color: $black;
+  font-style: normal;
+}
+
+.operator {
+  background-color: $purple;
+}
+
+.delete {
+  background-image: url("../img/Delete.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.reset {
+  background-color: $lite-grey;
+  width: 153px;
+}
+
+.division {
+  background-image: url("../img/Division.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.multiplication {
+  background-image: url("../img/Multiplication.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.minus {
+  background-image: url("../img/Minus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.row {
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.zero {
+  min-width: 238.33px;
+}

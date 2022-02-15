@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Worksans';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/Worksanslight.woff) format(woff), url(../fonts/Worksanslight.woff2) format(woff2); }
+@font-face {
+  font-family: 'Worksans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Worksans.woff) format(woff), url(../fonts/Worksans.woff2) format(woff2); }
+
+/*# sourceMappingURL=fonts.css.map */
