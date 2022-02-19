@@ -1,5 +1,4 @@
-@import "fonts",
-"variables";
+@import "variables";
 
 *, {
   box-sizing: border-box;
@@ -11,11 +10,11 @@
   font-family: 'Work sans', sans-serif;
   width: 364px;
   height: 582px;
-  margin: 0 auto;
+  margin: 20px auto 0px;
   padding: 21px 20px 25px;
   background-color: $black;
 }
-//
+
 button {
   width: 69px;
   height: 72px;
@@ -29,9 +28,16 @@ button {
   font-weight: 400;
   padding: 12px;
   align-items: center;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #919296;
+  }
+
 }
 
 .result {
+  display: block;
   font-family: 'Work sans', sans-serif;
   border: none;
   width: 100%;
@@ -63,18 +69,6 @@ button {
 
 .division {
   background-image: url("../img/Division.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.multiplication {
-  background-image: url("../img/Multiplication.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.minus {
-  background-image: url("../img/Minus.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
