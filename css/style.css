@@ -55,11 +55,6 @@ button {
   background-color: #4E505F;
   width: 153px; }
 
-.division {
-  background-image: url("../img/Division.svg");
-  background-repeat: no-repeat;
-  background-position: center; }
-
 .row {
   height: 72px;
   display: flex;
